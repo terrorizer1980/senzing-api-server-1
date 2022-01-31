@@ -1537,10 +1537,10 @@ public enum SzApiServerOption
           Set.of(Set.of(
               HTTPS_PORT, KEY_STORE, KEY_STORE_PASSWORD, CLIENT_KEY_STORE)));
 
-      conflictMap.get(CLIENT_KEY_STORE).add(HTTP_PORT);
-      conflictMap.get(CLIENT_KEY_STORE_PASSWORD).add(HTTP_PORT);
-      conflictMap.get(HTTP_PORT).add(CLIENT_KEY_STORE);
-      conflictMap.get(HTTP_PORT).add(CLIENT_KEY_STORE_PASSWORD);
+      // conflictMap.get(CLIENT_KEY_STORE).add(HTTP_PORT);
+      // conflictMap.get(CLIENT_KEY_STORE_PASSWORD).add(HTTP_PORT);
+      // conflictMap.get(HTTP_PORT).add(CLIENT_KEY_STORE);
+      // conflictMap.get(HTTP_PORT).add(CLIENT_KEY_STORE_PASSWORD);
 
       CONFLICTING_OPTIONS = recursivelyUnmodifiableMap(conflictMap);
       ALTERNATIVE_OPTIONS = recursivelyUnmodifiableMap(altMap);
